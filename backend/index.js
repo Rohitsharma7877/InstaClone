@@ -23,7 +23,7 @@ app.use(urlencoded({ extended: true }));
 
 // CORS Setup
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: process.env.URL,
     credentials: true   // Allows cookies to be sent with requests
 }
 app.use(cors(corsOptions));

@@ -11,7 +11,7 @@ const useGetAllMessage = () => {
     const fetchAllMessage = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:4000/api/v1/message/all/${selectedUser?._id}`,
+          `https://instaclone-ltm8.onrender.com/api/v1/message/all/${selectedUser?._id}`,
           { withCredentials: true }
         );
         if (res.data.success) {
